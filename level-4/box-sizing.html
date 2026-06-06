@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+        *{ 
+            padding: 0;
+            margin: 0;
+        }
+        .pad{
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            margin: 5px;
+        }
+        #first{
+            
+            border: 2px solid;
+            border-radius: 5px;
+            box-sizing: content-box; /* by default wrap padding & other stuffs around content*/
+            background-color: red;
+
+             /* top right bottom left*/  /* margin>border>padding>content */
+        }
+        #second{
+            
+            border: 4px solid;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: greenyellow;
+             
+        }
+    </style>
+</head>
+<body>
+    <div id="first" class="pad">First</div>
+    <div id="second" class="pad">Second</div>
+</body>
+</html>
