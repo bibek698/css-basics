@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative unit: rem</title>
+    <style>
+        *{
+            font-size: 5px;
+        }
+        #first{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            font-size: 10px;
+        }
+        #second{
+            height: 50%; /* take 50% height of parents block if parent not available takes from document size*/
+            width: 50%;
+            background-color: red;
+
+            font-size: 2rem; /* root font size times 2.5 therefore it is 10px*/
+        }
+
+    </style>
+</head>
+<body>
+    Body text
+    <div id="first">
+        First Div
+        <div id="second">
+            Second Div
+        </div>
+    </div>
+    
+</body>
+</html>

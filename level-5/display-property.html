@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            background-color: blue;
+            
+            height: 100px;
+            width: 100px;
+            display: inline-block; /* can set height and width*/
+
+            /* display: inline; cannot set height and widht of content takes space only taken by content and div is by default diplay block; */
+        }
+        #box1{
+            display: none; /* box is hidden and space is also not taken*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box 1</div> 
+    <div id="box2" class="box">Box 2</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display position</title>
+
+    <style>
+        div{
+            height: 80px;
+            width: 80px;
+            background-color: red;
+            margin: 5px;
+        }
+        #div1{
+            position: static; /*  static position is default*/
+        }
+        #div2{
+            position: relative;
+            top: 20px;
+            left: 50px;
+        }
+         #div3{
+            position: fixed;
+            top: 100px;
+            left: 150px;
+        }
+         #div4{
+            position: absolute;
+            top:200px ;
+            left: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="div1">1 Static</div>  <!-- static position is default -->
+    <div id="div2">2 Relative</div> <!-- relative position is realted from its previous position -->
+    <div id="div3">3 Fixed</div> <!-- fixed position is always fixed from corner of browser even if we scroll eg navbar -->
+    <div id="div4">4 Absolute</div> <!-- absolute position is positioned wrt to corner of browser -->
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+    <div>Box</div>
+</body>
+</html>
