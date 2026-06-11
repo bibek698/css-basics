@@ -12,14 +12,17 @@
         }
         #container{
             height: 500px;
-            width: 80%;
+            width: 60%;
             border: 1px solid black;
             display: flex;
-            flex-direction: column-reverse;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center; /* align items to the center of the container  around cross axis */
+            align-content: center; 
         }
         .box{
-            height: 100px;
-            width: 100px;
+            height: 150px;
+            width: 150px;
             background-color: lightblue;
             margin: 10px;
             
@@ -34,6 +37,9 @@
         <div id="box2" class="box">Flex item 2</div>
         <div id="box3" class="box">Flex item 3</div>
         <div id="box4" class="box">Flex item 4</div>
+        <div id="box5" class="box">Flex item 5</div>
+        <div id="box6" class="box">Flex item 6</div>
+        
     </div>
 </body>
 </html>
