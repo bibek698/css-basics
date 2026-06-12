@@ -17,8 +17,8 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            align-items: center; /* align items to the center of the container  around cross axis */
-            align-content: center; 
+             /* align items to the center of the container  around cross axis */
+            
         }
         .box{
             height: 150px;
@@ -27,8 +27,9 @@
             margin: 10px;
             
         }
-        /* main axis is left to right and cross axis is top to bottom. when we apply float right to the box, it will be taken out of the normal flow and will be aligned to the right side of the container. the main axis will be from left to right and the cross axis will be from top to bottom. the box will be placed on the right side of the container and will be aligned to the top of the container. */
-    </style>
+       #box2{
+        align-self: center; /* align the second box to the end of the container */
+       }    </style>
 </head>
 <body>
     <h1 id="heading">Flex Container</h1>
@@ -37,8 +38,7 @@
         <div id="box2" class="box">Flex item 2</div>
         <div id="box3" class="box">Flex item 3</div>
         <div id="box4" class="box">Flex item 4</div>
-        <div id="box5" class="box">Flex item 5</div>
-        <div id="box6" class="box">Flex item 6</div>
+        
         
     </div>
 </body>
