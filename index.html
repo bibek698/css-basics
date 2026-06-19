@@ -29,6 +29,14 @@
             transform: translate(50px, 50px); /* x-axis, y-axis */
             transition: transform 0.5s ease-in-out;
         }
+        #box4:hover {
+            transform: skew(20deg, 10deg); /* x-axis, y-axis */
+            transition: transform 0.5s ease-in-out;
+        }
+        #box5:hover {
+            transform: skewX(45deg); /* x-axis */
+            transition: transform 0.5s ease-in-out;
+        }
     </style>
 </head>
 
@@ -37,5 +45,8 @@
     <div class="box">Rotate</div>
     <div class="box" id="box2">Scale twice</div>
     <div class="box" id="box3">Translate</div>
+    <div class="box" id="box4">Skew</div>
+    <div class="box" id="box5">Skew 2</div>
+
 </body>
 </html>
